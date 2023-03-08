@@ -1,2 +1,2 @@
-[InternetShortcut]
-URL=https://github.com/pooriagg/Ethereum-NFT-Marketplace/blob/main/README.md
+# Ethereum-NFT-Marketplace
+Ethereum Powered 100% Decentralized NFT Marketplace, Built For Mass Adoption !
