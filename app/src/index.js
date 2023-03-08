@@ -31,7 +31,7 @@ if (!STATUS) {
   if (Validate()) {
     root.render(
       <React.StrictMode>
-        <BrowserRouter>
+        <BrowserRouter basename='Ethereum-NFT-Marketplace'>
           <App />
         </BrowserRouter>
       </React.StrictMode>
