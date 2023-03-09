@@ -1,5 +1,5 @@
 =====
-Ethereum Marketplace Documents
+Ethereum Marketplace Document
 =====
 
 .. code-block:: solidity
