@@ -2,7 +2,7 @@
 Ethereum Powered 100% Decentralized NFT Marketplace, Built For Mass Adoption !
 
 # Marketplace
--You can visit the marketplace live in this address => https://pooriagg.github.io/Ethereum-NFT-Marketplace
+-You can visit the marketplace live in ----> https://pooriagg.github.io/Ethereum-NFT-Marketplace
 
 NOTE:
 Marketplace smart-contracts were deployed on polygin-mumbai testnet make sure before going to marketplace change your wallet chain to the correct chain
