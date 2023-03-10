@@ -143,3 +143,128 @@ Parameters
 
 ---------------------------------------------------------------------------------------------
 
+cancel bid
+===============
+
+.. code-block:: solidity
+
+  function cancelBid(uint256 _bidId) external;
+  
+Bid owner will be able to cancel his/her bid any time by calling this function.
+
+----------
+Parameters
+----------
+
+1. ``_bidId`` - ``uint256``: The bid id which bidder wishes to cancel.
+
+---------------------------------------------------------------------------------------------
+
+cancel sell order
+=====================
+
+.. code-block:: solidity
+
+  function cancelSellOrder(uint256 _orderId) external;
+  
+Sell order owner will be able to cancel his/her sell order any time by calling this function.
+
+----------
+Parameters
+----------
+
+1. ``_orderId`` - ``uint256``: The order id which owner wishes to cancel.
+
+---------------------------------------------------------------------------------------------
+
+create ERC721 collection
+============================
+
+.. code-block:: solidity
+
+    function createERC721Contract(
+      string calldata _collectionName,
+      string calldata _collectionSymbol,
+      string calldata _collectionDescription,
+      address _factory
+    ) external;
+    
+Each user can create a NFT collection by calling this function.
+
+----------
+Parameters
+----------
+
+1. ``_collectionName`` - ``string``: The NFT collection main name.
+2. ``_collectionSymbol`` - ``string``: The NFT collection symbol.
+3. ``_collectionDescription`` - ``string``: The NFT collection main description.
+4. ``_factory`` - ``address``: The address of the NFT collection factory which specifiedd in the source code of the project.
+
+---------------------------------------------------------------------------------------------
+
+get sell order info
+=====================
+
+.. code-block:: solidity
+
+  function sellOrder(uint256 _sellOrderId) external view returns(SellOrder memory);
+  
+Will return the full info of the specific ``_sellOrderId``.
+
+----------
+Parameters
+----------
+
+1. ``_sellOrderId`` - ``uint256``: The order id.
+
+-------
+Returns
+-------
+
+1. ``SellOrder`` - ``SellOrder's struct``
+
+---------------------------------------------------------------------------------------------
+
+get bid info
+=====================
+
+.. code-block:: solidity
+
+  function bid(uint256 _bidId) external view returns(Bid memory);
+  
+Will return the full info of the specific ``_bidId``.
+
+----------
+Parameters
+----------
+
+1. ``_bidId`` - ``uint256``: The bid id.
+
+-------
+Returns
+-------
+
+1. ``Bid`` - ``Bid's struct``
+
+---------------------------------------------------------------------------------------------
+
+get user NFT collection address
+==================================
+
+.. code-block:: solidity
+
+  function getUserContract(address _user) external view returns(address);
+  
+Will return the addre of the specific ``_user`` collection created via ``createERC721Contract`` function.
+
+----------
+Parameters
+----------
+
+1. ``_orderId`` - ``uint256``: The order id which owner wishes to cancel.
+
+-------
+Returns
+-------
+
+1. ``user's collection's address`` - ``address``
