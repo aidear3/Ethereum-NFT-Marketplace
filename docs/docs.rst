@@ -1,6 +1,6 @@
-=====
-Ethereum Marketplace Document
-=====
+=================================
+Ethereum NFT Marketplace Document
+=================================
 
 .. code-block:: solidity
 
