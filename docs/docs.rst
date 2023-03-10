@@ -138,4 +138,4 @@ Sell order owner will accept a relevant bid by calling this function.
 Parameters
 ----------
 
-1. ````
+
