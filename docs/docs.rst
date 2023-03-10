@@ -138,4 +138,8 @@ Sell order owner will accept a relevant bid by calling this function.
 Parameters
 ----------
 
+1. ``_bidId`` - ``uint256``: The bid id which sell order owner wishes to accept it.
+2. ``_orderId`` - ``uint256``: The order id of the sell order owner.
+
+---------------------------------------------------------------------------------------------
 
