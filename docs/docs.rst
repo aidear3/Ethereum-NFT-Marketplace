@@ -248,7 +248,7 @@ Returns
 
 ---------------------------------------------------------------------------------------------
 
-get user NFT collection address
+get user's NFT collection address
 ==================================
 
 .. code-block:: solidity
