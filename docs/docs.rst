@@ -267,4 +267,23 @@ Parameters
 Returns
 -------
 
-1. ``user's collection's address`` - ``address``
+1. ``user's collection's account`` - ``address``
+
+---------------------------------------------------------------------------------------------
+
+Interaction With Marketplace - Frontend - Example
+=====================================================
+
+.. code-block:: javascript
+
+  // create web3 instance
+  const web3 = new Web3(window.ethereum); // wallet externsion as provider
+  
+  // create marketplace instance
+  const market = new web3.eth.Contract(
+    marketplace.abi,
+    marketplace.address
+  );
+
+  // create a sell order
+  
