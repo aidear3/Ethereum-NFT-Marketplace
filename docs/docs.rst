@@ -295,27 +295,27 @@ Interaction With Marketplace - Frontend - Example
   // before creating sell order user must approve the marketplace to access the nft
   // price must be in decimal format
   const txReceipt = await market.methods.createSellOrder(
-    <contract-address>,
-    <nft-id>,
-    <token>,
-    <price>
+    "<contract-address>",
+    "<nft-id>",
+    "<token>",
+    "<price>"
   ).send();
   
   // create a bid
   // before creating bid user must approve the marketplace to access the specific amount of the token
   // price must be in decimal format
   const txReceipt_2 = await market.methods.createBid(
-    <order-id>,
-    <token>,
-    <price>
+    "<order-id>",
+    "<token>",
+    "<price>"
   ).send();
   
   // accept the bid
   // only owner of the sell-order can accept a relevant bid
   // only can accpect the relevant bid
   const txReceipt_3 = await market.methods.acceptBid(
-    <bid-id>,
-    <order-id>
+    "<bid-id>",
+    "<order-id>"
   ).send();
 
 .. warning:: Always pass numbers as Big-Number to the smart contracts, you can use web3.utils.toBN() for this purpose.
