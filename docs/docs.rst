@@ -88,7 +88,7 @@ Parameters
 
 1. ``_contractAddr`` - ``address``: The sell order creator nft's contract address.
 2. ``_nftId`` - ``uint256``: The nft's id which user is going to sell it.
-3. ``_token`` - ``address``: The address of token (currency like USDC, ...) that user wishes to make a price for his/her sell order
+3. ``_token`` - ``address``: The address of token (currency like USDT, ...) that user wishes to make a price for his/her sell order
 4. ``_price`` - ``uint256``: The price of the sell order in decimal format.
 
 .. warning:: User must approve the marketplace to access the nft token to list it in the market.
