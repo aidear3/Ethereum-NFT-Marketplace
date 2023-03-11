@@ -317,3 +317,5 @@ Interaction With Marketplace - Frontend - Example
     "<bid-id>",
     "<order-id>"
   ).send();
+
+.. warning:: Always pass numbers as Big-Number to the smart contracts, you can use web3.utils.toBN() for this purpose.
