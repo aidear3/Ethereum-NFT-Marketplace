@@ -279,11 +279,41 @@ Interaction With Marketplace - Frontend - Example
   // create web3 instance
   const web3 = new Web3(window.ethereum); // wallet externsion as provider
   
+  // get user account
+  const [ currentAccount ] = await web3.eth.requestAccounts();  
+  
   // create marketplace instance
   const market = new web3.eth.Contract(
     marketplace.abi,
-    marketplace.address
+    marketplace.address,
+    {
+      from: currentAccount
+    }
   );
 
   // create a sell order
+  // before creating sell order user must approve the marketplace to access the nft
+  // price must be in decimal format
+  const txReceipt = await market.methods.createSellOrder(
+    "<contract-address>",
+    "<nft-id>",
+    "<token>",
+    "<price>"
+  ).send();
   
+  // create a bid
+  // before creating bid user must approve the marketplace to access the specific amount of the token
+  // price must be in decimal format
+  const txReceipt_2 = await market.methods.createBid(
+    "<order-id>",
+    "<token>",
+    "<price>"
+  ).send();
+  
+  // accept the bid
+  // only owner of the sell-order can accept a relevant bid
+  // only can accpect the relevant bid
+  const txReceipt_3 = await market.methods.acceptBid(
+    "<bid-id>",
+    "<order-id>"
+  ).send();
