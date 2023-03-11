@@ -277,7 +277,7 @@ Interaction With Marketplace - Frontend - Example
 .. code-block:: javascript
 
   // create web3 instance
-  const web3 = new Web3(window.ethereum); // wallet externsion as provider
+  const web3 = new Web3(window.ethereum); // wallet extension as provider
   
   // get user account
   const [ currentAccount ] = await web3.eth.requestAccounts();  
