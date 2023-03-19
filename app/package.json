@@ -1,5 +1,6 @@
 {
   "name": "app",
+  "author": "pooria-sarkhanzade (PooriaGG)",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
