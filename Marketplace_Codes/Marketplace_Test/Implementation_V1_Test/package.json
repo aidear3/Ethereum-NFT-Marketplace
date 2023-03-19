@@ -13,7 +13,7 @@
   "scripts": {
     "test": "truffle test ImpV1.test.js"
   },
-  "author": "pooriagg",
+  "author": "pooria-sarkhanzade (PooriaGG)",
   "license": "ISC",
   "description": ""
 }
