@@ -93,7 +93,6 @@ const App = () => {
     } catch (switchError) {
       if (switchError.code === 4902) {
         try {
-  
           const chainMetadata = {
             chainId: `0x${Number(80001).toString(16)}`,
             chainName: "Polygon Mumbia (Testnet)",
